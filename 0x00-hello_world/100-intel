@@ -1,2 +1,2 @@
 #!/bin/bash
-export CFILE=100-main.c; gcc -S $CFILE -o 100-main.s
+export CFILE=0-main.c; gcc -S $CFILE -o 0-main.s
