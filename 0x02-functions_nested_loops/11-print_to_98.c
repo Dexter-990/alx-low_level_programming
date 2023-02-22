@@ -9,10 +9,12 @@
 
 void print_to_98(int n)
 {
+	int *ptr_n;
+	ptr_n = &n;
 	if (n < 98)
 	{
 
-		for (x = n; n < 99; n++)
+		for (n = *ptr_n; n < 99; n++)
 		{
 			printf("%d", n);
 			if (n != 98)
@@ -22,7 +24,7 @@ void print_to_98(int n)
 	}
 	else if (n > 98)
 	{
-		for (x = n; n > 97; n--)
+		for (n = *ptr_n; n > 97; n--)
 		{
 			printf("%d", n);
 			if (n != 98)
@@ -35,4 +37,9 @@ void print_to_98(int n)
 		printf("%d\n", n);
 	}
 
+}
+int main()
+{
+	print_to_98(11);
+	return (0);
 }
