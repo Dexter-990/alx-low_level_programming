@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 		;
 	for (i = 1; i < 11; i++)
 	{
-		for (x = 'a'; x < 'z'; x++)
+		for (x = 'a'; x <= 'z'; x++)
 		{
 			putchar(x);
 		}
