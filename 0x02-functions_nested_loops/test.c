@@ -1,25 +1,7 @@
 #include "main.h"
 
-
-void print_n(int n)
+int main()
 {
-	int x;
-	if (n > 0)
-	{
-		x = n / 10;
-		_putchar(x);
-	}
-	else
-	{
-		x = n / 10;
-		_putchar(x);
-	}
-	putchar('y');
-	return;
-}
-int main(void)
-{
-	print_n(19);
-	_putchar(19);
+	putchar(100 % 100 + '0');
 	return (0);
 }

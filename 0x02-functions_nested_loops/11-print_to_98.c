@@ -10,6 +10,7 @@
 void print_to_98(int n)
 {
 	int *ptr_n;
+
 	ptr_n = &n;
 	if (n < 98)
 	{
