@@ -13,17 +13,20 @@ int main(void)
  *
  * Return: returns null
  */
-	void print_alphabet(void)
-	{
-		char ch;
-
-		for (ch = 'a'; ch <= 'z'; ch++)
-			putchar(ch);
-		putchar('\n');
-		return;
-	}
-
+	
+	void print_alphabet(void);
 	print_alphabet();
 	return (0);
+}
+
+
+void print_alphabet(void)
+{
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	putchar('\n');
+	return;
 }
 
