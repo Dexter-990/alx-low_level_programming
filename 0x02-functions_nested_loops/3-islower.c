@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * 3-islower - checks if word is lower
- *
+ * _islower - checks if word is lower
+ * 
+ * @c: variable to be checked
  * Return: returns 1 if true otherwise 0
  */
 
