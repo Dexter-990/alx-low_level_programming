@@ -14,7 +14,6 @@ int main(void)
  * Return: returns null
  */
 	
-	void print_alphabet(void);
 	print_alphabet();
 	return (0);
 }
