@@ -7,6 +7,7 @@ void print_alphabet(void);
 int add(int, int);
 void times_table(void);
 int add(int, int);
+void print_to_98(int n);
 int _islower(int c);
 int putchar(int ch);
 int print_last_digit(int);
