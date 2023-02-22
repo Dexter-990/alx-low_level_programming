@@ -1,23 +1,10 @@
 #include "main.h"
 
 /**
- * main - contains print_alphabet() function
+ * print_alphabet - contains print_alphabet() function
  *
  * Return: returns success
  */
-
-int main(void)
-{
-/**
- * print_alphabet - prints all alphabets in lower case
- *
- * Return: returns null
- */
-	
-	print_alphabet();
-	return (0);
-}
-
 
 void print_alphabet(void)
 {
