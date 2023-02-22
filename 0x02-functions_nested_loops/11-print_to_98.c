@@ -38,8 +38,3 @@ void print_to_98(int n)
 	}
 
 }
-int main()
-{
-	print_to_98(11);
-	return (0);
-}
