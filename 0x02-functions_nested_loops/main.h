@@ -4,6 +4,7 @@
 int puts(const char *s);
 int _putchar(char ch);
 void print_alphabet(void);
+void times_table(void);
 int _islower(int c);
 int putchar(int ch);
 int print_last_digit(int);
