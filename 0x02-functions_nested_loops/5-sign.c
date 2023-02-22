@@ -14,7 +14,7 @@ int print_sign(int n)
 		putchar('+');
 		putchar(',');
 		putchar(' ');
-		putchar(n)
+		putchar(n);
 		putchar('\n');
 		return (1);
 	}
