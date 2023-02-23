@@ -12,11 +12,23 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	if ((year % 4 == 0 || year % 400 == 0) && !(year % 100 == 0))
+	if (year % 4 == 0)
+
 	{
-		if (month >= 3 && day >= 60)
+		if (year % 100 != 0)
 		{
-			day++;
+
+			if (month >= 3 && day >= 60)
+			{
+				day++;
+			}
+		}
+		else if (year % 400 == 0)
+		{
+			if (month >= 3 && day >= 60)
+			{
+				day++;
+			}
 		}
 
 		printf("Day of the year: %d\n", day);
@@ -34,4 +46,22 @@ void print_remaining_days(int month, int day, int year)
 			printf("Remaining days: %d\n", 365 - day);
 		}
 	}
+}
+int main(void)
+{
+	int month;
+	int day;
+	int year;
+
+	month = 2;
+	day = 29;
+	year = 2020;
+
+	printf("Date: %02d/%02d/%04d\n", month, day, year);
+
+	day = convert_day(month, day);
+
+	print_remaining_days(month, day, year);
+
+	return (0);
 }
