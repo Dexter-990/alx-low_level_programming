@@ -17,10 +17,7 @@ int main(void)
 	i = 0;
 	while (i < 98)
 	{
-		if (j != o * 1000000)
-			printf("%lu, ", j);
-		else
-			printf("%lu\n", j);
+		printf("%lu\n", j);
 		next = j + k;
 
 		j = k;
