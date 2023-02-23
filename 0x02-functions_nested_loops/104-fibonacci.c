@@ -11,13 +11,16 @@ int main(void)
 {
 	int i;
 	unsigned long int j, k, next;
-
+	unsigned long int o = 16008811023750101250;
 	j = 1;
 	k = 2;
 	i = 0;
 	while (i < 98)
 	{
-		printf("%lu\n", j);
+		if (j != o)
+			printf("%lu, ", j);
+		else
+			printf("%lu\n", j);
 		next = j + k;
 
 		j = k;
