@@ -8,22 +8,24 @@
 
 int main(void)
 {
-	int x, y, z, next;
+	long int x, y, z, next, sum;
 
 	x = 1;
 	y = 2;
 	z = 0;
+	sum = 0;
 
-	while (z < 40)
+	while (z < 50)
 	{
+		if ((y <= 4000000) && (y % 2 == 0))
+			sum += y;
 
 		next = x + y;
 		x = y;
 		y = next;
-		if (y < 4000000 && y % 2 == 0)
-			printf("%d\n", y);
 		z++;
 	}
+	printf("%ld\n", sum);
 	return (0);
 }
 
