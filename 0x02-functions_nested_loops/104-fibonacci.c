@@ -11,13 +11,13 @@ int main(void)
 {
 	int i;
 	unsigned long int j, k, next;
-	unsigned long int o = 16008811023750101250;
+	long double o = 16008811023750.101250;
 	j = 1;
 	k = 2;
 	i = 0;
 	while (i < 98)
 	{
-		if (j != o)
+		if (j != o * 1000000)
 			printf("%lu, ", j);
 		else
 			printf("%lu\n", j);
