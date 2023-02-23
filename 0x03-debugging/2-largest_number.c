@@ -28,16 +28,3 @@ int largest_number(int a, int b, int c)
 
 	return (largest);
 }
-
-int main()
-{
-	int a, b, c, largest;
-	a = -100;
-	b = 233;
-	c = 0;
-
-	largest = largest_number(a, b, c);
-	printf("%d", largest);
-	putchar('\n');
-	return (0);
-}
