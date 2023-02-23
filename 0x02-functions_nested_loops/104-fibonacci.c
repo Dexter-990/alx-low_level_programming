@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 /**
@@ -9,18 +10,14 @@
 int main(void)
 {
 	int i;
-	long int j, k, next;
+	unsigned long int j, k, next;
 
 	j = 1;
 	k = 2;
 	i = 0;
-	while (i < 50)
+	while (i < 98)
 	{
-		if (j != 20365011074)
-
-			printf("%ld, ", j);
-		else
-			printf("%ld\n", j);
+		printf("%ld\n", j);
 		next = j + k;
 
 		j = k;
