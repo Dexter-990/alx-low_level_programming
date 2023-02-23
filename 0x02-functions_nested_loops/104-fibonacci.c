@@ -17,7 +17,7 @@ int main(void)
 	i = 0;
 	while (i < 98)
 	{
-		printf("%ld\n", j);
+		printf("%lu\n", j);
 		next = j + k;
 
 		j = k;
