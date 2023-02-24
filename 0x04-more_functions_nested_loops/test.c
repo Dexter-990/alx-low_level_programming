@@ -2,6 +2,6 @@
 
 int main()
 {
-	_putchar("hello");
+	_putchar(-1);
 	return (0);
 }
