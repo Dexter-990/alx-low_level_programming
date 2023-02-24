@@ -20,7 +20,7 @@ void print_triangle(int size)
 		{
 			for (space = 0; space < spc - 1; space++)
 			{
-				_putchar('.');
+				_putchar(' ');
 			}
 			for (pound = 0; pound < i + 1; pound++)
 			{
