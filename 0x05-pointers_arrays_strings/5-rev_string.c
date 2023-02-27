@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_rev - reserves a string
+ * rev_string - reserves a string
  *
  * @s: string to be reversed
  */
