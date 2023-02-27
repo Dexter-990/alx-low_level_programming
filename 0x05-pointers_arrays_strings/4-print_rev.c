@@ -13,7 +13,7 @@ void print_rev(char *s)
 {
 	int len = strlen(s);
 	int i;
-	char str[100] = "dsaonvfidvfe";
+	char str[1000] = "";
 
 	for (i = 0; s[i]; i++)
 	{
