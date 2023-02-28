@@ -4,8 +4,9 @@
 /**
  * *_strcpy - copies a string from one variable to another
  *
- * @des: variable to be copied to
+ * @dest: variable to be copied to
  * @src: variable to be copied from
+ * Return: returns pointer 
  */
 
 char *_strcpy(char *dest, char *src)
@@ -19,4 +20,3 @@ char *_strcpy(char *dest, char *src)
 	}
 	return (dest);
 }
-		
