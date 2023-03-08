@@ -21,5 +21,4 @@ void reverse_array(int *a, int n)
 		j++;
 	}
 	printf("\n");
-	printf("%d\n", n);
 }
