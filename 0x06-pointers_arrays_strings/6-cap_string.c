@@ -28,7 +28,6 @@ char *cap_string(char *str)
 		{
 			if (str[j] > 96 && str[j] < 123)
 			{
-				printf("cap\n");
 				str[j] -= 32;
 			}
 		}
