@@ -13,6 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int x;
+
 	__attribute__ ((unused)) int y;
 	char p[1000];
 
