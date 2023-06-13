@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
 
 /**
  * main - prints all argument vectors
@@ -11,17 +12,18 @@
 
 int main(int argc, char *argv[])
 {
-	int x, y;
-	char p[50];
+	int x;
+	__attribute__ ((unused)) int y;
+	char p[1000];
 
 	for (x = 0; x < argc; x++)
 	{
 		strcpy(p, argv[x]);
-		for (y = 0; argv[y]; y++)
+		for (y = 0; p[y]; y++)
 		{
-			_putchar(p[y]);
+			putchar(p[y]);
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 	return (0);
 }
