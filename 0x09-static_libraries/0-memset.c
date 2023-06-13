@@ -1,17 +1,16 @@
-#include "main.h"
-
 /**
- *  * _isupper - Checks if a character input is upper case
- *   * @c: character to check
- *    * Return: 1 if character is upper and 0 if otherwise
- *     */
+ * * _memset - Fills memory area
+ * * @s: pointer to memory area
+ * * @b: contains value to be filled into area
+ * * @n: number of bytes to fill
+ * * Return: pointer to memory area
+ * */
 
-int _isupper(int c)
+char *_memset(char *s, char b, unsigned int n)
 {
-		if (c >= 65 && c <= 90)
-				{
-							return (1);
-								}
-			else
-						return (0);
+		unsigned int i;
+
+			for (i = 0 ; i < n ; i++)
+						s[i] = b;
+				return (s);
 }
