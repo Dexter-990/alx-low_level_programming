@@ -15,10 +15,15 @@ char *str_concat(char *s1, char *s2)
 {
 	char *ptr_s;
 	unsigned long int x, y;
+		if (s1 == NULL)
+			s1 = "";
+		else if (s2 == NULL)
+			s2 = "";
 
 	ptr_s = malloc(sizeof(char) * (strlen(s1) + strlen(s2)));
 	if (ptr_s == NULL)
 		return (NULL);
+
 	x = 0;
 	while (x < strlen(s1))
 	{
@@ -32,6 +37,7 @@ char *str_concat(char *s1, char *s2)
 		y++;
 		x++;
 	}
+
 	return (ptr_s);
 }
 
