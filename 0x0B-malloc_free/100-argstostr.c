@@ -42,6 +42,7 @@ char *argstostr(int ac, char **av)
 		ptr_c[c] = '\n';
 		c += 1;
 	}
+	free(ptr_c);
 	return (ptr_c);
 }
 
