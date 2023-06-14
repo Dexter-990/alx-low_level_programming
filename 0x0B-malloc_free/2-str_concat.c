@@ -16,28 +16,28 @@ char *str_concat(char *s1, char *s2)
 	char *ptr_s;
 	unsigned long int x, y;
 		if (s1 == NULL)
+		{
 			s1 = "";
+		}
 		else if (s2 == NULL)
+		{
 			s2 = "";
+		}
 
-	ptr_s = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
+	ptr_s = malloc(sizeof(char) * (strlen(s1) + strlen(s2)) + 1);
 	if (ptr_s == NULL)
 		return (NULL);
-
 	x = 0;
-	while (x < strlen(s1))
+	for (x = 0; *(s1 + x) != '\0'; x++)
 	{
 		*(ptr_s + x) = *(s1 + x);
-		x++;
 	}
 	y = 0;
-	while (y < strlen(s2))
+	for (y = 0; *(s2 + y) != '\0'; y++)
 	{
 		*(ptr_s + x) = *(s2 + y);
-		y++;
 		x++;
 	}
-
 	return (ptr_s);
 }
 
