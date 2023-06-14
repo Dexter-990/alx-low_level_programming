@@ -1,3 +1,4 @@
+
 #include "main.h"
 #include <stdlib.h>
 
@@ -10,29 +11,27 @@
  */
 
 
-int **alloc_grid(int height, int width)
+int **alloc_grid(int width, int height)
 {
-	int **ptr_x, x, y;
+	int *ptr_x, x, y;
 
 	if (width == 0 || height == 0)
 		return (NULL);
 
-	ptr_x = (int **) malloc(sizeof(int *) * width);
+	ptr_x = malloc(sizeof(int) * (height * width));
 
 	if (ptr_x == 0)
 		return (NULL);
-	for (x = 0; x < width; x++)
+	/*for (x = 0; x < height; x++)
 	{
-		ptr_x[x] = (int *) malloc(sizeof(int) * height);
+		ptr_x[x] = (int *) malloc(sizeof(int) * width);
 		if (ptr_x[x] == NULL)
 			return (NULL);
 	}
-	for (x = 0; x < width; x++)
-		free(ptr_x[x]);
-
-	for (x = 0; x < width; x++)
+*/
+	for (x = 0; x < height; x++)
 	{
-		for (y = 0; y < height; y++)
+		for (y = 0; y < width; y++)
 		{
 			ptr_x[x][y] = 0;
 		}
