@@ -14,30 +14,30 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr_s;
-	unsigned long int x, y;
+	unsigned int x, y;
+
 		if (s1 == NULL)
 		{
 			s1 = "";
 		}
-		else if (s2 == NULL)
+		if (s2 == NULL)
 		{
 			s2 = "";
 		}
 
 	ptr_s = malloc(sizeof(char) * (strlen(s1) + strlen(s2)) + 1);
-	if (ptr_s == NULL)
+
+	if (ptr_s == 0)
 		return (NULL);
-	x = 0;
+
 	for (x = 0; *(s1 + x) != '\0'; x++)
-	{
 		*(ptr_s + x) = *(s1 + x);
-	}
-	y = 0;
 	for (y = 0; *(s2 + y) != '\0'; y++)
 	{
 		*(ptr_s + x) = *(s2 + y);
 		x++;
 	}
+
 	return (ptr_s);
 }
 
