@@ -26,5 +26,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		*((char *) ptr + x) = 0;
 	}
-	return (void ptr);
+	return ((void *) ptr);
 }
