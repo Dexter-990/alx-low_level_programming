@@ -2,9 +2,19 @@
 #define DOG_H
 
 
-struct dog {
-	float age; 
-	char *name; 
+
+/**
+ * struct dog - a structure of dog
+ *
+ * @d: varable of dog structure
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ */
+struct dog
+{
+	float age;
+	char *name;
 	char *owner;
 };
 
