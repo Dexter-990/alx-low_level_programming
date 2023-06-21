@@ -1,7 +1,8 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - executes a function given as a parameter on each element of an array
+ * array_iterator - executes a function given as a
+ * parameter on each element of an array
  *
  * @array: array where numbers are at
  * @size: size of the array
@@ -12,6 +13,11 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int x;
 
-	for (x = 0; x < size; x++)
+	if (action != 0)
 	{
-		acti
+		for (x = 0; x < size; x++)
+		{
+			action(array[x]);
+		}
+	}
+}
