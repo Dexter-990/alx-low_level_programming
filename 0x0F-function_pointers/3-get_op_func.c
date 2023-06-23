@@ -26,15 +26,13 @@ int (*get_op_func(char *s))(int a, int b)
 
 	/*printf("%s\n", s);
 	*/i = 0;
-	while (i < 6)
+	while (ops[i].op)
 	{
-		if (strncmp(ops[i].op, s, 1) == 0)
+		if (strcmp(ops[i].op, s) == 0)
 		{
 			return (ops[i].f);
 		}
 		i++;
 	}
-	printf("Error\n");
-	exit(99);
-
+	return (NULL);
 }

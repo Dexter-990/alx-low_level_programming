@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	if (f == NULL)
 	{
 		printf("Error\n");
-		return (0);
+		exit (99);
 	}
 
 	if (argc != 4)
