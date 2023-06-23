@@ -24,8 +24,7 @@ int (*get_op_func(char *s))(int a, int b)
 	};
 	int i;
 
-	/*printf("%s\n", s);
-	*/i = 0;
+	i = 0;
 	while (ops[i].op)
 	{
 		if (strcmp(ops[i].op, s) == 0)

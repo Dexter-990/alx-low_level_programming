@@ -14,11 +14,11 @@
 int main(int argc, char **argv)
 {
 	int (*f)(int, int) = get_op_func(argv[2]);
-	
+
 	if (f == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	if (argc != 4)
