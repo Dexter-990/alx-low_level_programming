@@ -24,10 +24,11 @@ int (*get_op_func(char *s))(int a, int b)
 	};
 	int i;
 
+	printf("%s\n", s);
 	i = 0;
 	while (i < 6)
 	{
-		if (strcmp(ops[i].op, s) == 0)
+		if (strncmp(ops[i].op, s, 1) == 0)
 		{
 			return (ops[i].f);
 		}
