@@ -9,7 +9,7 @@ void free_listint2(listint_t **head)
 {
 	listint_t *c, *ptr = *head;
 
-	if (*head == 0)
+	if (ptr == NULL)
 		return;
 	while (ptr != NULL)
 	{
