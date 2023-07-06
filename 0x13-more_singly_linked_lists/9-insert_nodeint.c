@@ -16,12 +16,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	unsigned int a;
 
 	listint_t *new = malloc(sizeof(listint_t));
+	size_t len = listint_len(*head);
 
+	if (idx > len)
+		return (NULL);
 	if (new == NULL)
 		return (NULL);
 	new->n = n;
 	new->next = NULL;
-
 
 	if (*head == NULL && idx == 0)
 	{
@@ -35,7 +37,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		new->next = ptr;
 		return (*head);
 	}
-
 	for (a = 0; a < (idx - 1); a++)
 	{
 		ptr = ptr->next;
@@ -43,4 +44,28 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	new->next = ptr->next;
 	ptr->next = new;
 	return (ptr->next);
+}
+
+/**
+ * listint_len -  returns the number of elements in a linked listint_t list
+ * @h: pointer to first node
+ *
+ * Return: returns number of nodes
+ */
+
+size_t listint_len(const listint_t *h)
+{
+	size_t count = 0;
+	const listint_t *ptr  = h;
+
+	if (ptr != NULL)
+	{
+		while (ptr != NULL)
+		{
+			count++;
+			ptr = ptr->next;
+		}
+		return (count);
+	}
+	return (0);
 }
