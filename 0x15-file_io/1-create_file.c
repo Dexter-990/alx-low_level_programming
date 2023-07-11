@@ -11,8 +11,10 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd, w;
 
-	if (!filename || !text_content)
+	if (!filename)
 		return (-1);
+	if (!text_content)
+		text_content = "";
 
 	fd = open(filename, O_TRUNC | O_WRONLY | O_CREAT, 0600);
 	if (fd < 0)
